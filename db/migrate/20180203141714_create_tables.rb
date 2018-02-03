@@ -8,5 +8,9 @@ class CreateTables < ActiveRecord::Migration[5.1]
     create_table :titles do |t|
       t.string :name
     end
+
+    create_table :landmarks do |t|
+      t.string :name
+    end
   end
 end
