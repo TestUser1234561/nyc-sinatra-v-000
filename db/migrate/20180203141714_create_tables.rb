@@ -11,6 +11,7 @@ class CreateTables < ActiveRecord::Migration[5.1]
 
     create_table :landmarks do |t|
       t.string :name
+      t.belongs_to :ffigure, index: true
     end
   end
 end
