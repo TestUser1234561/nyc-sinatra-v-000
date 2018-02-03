@@ -1,6 +1,6 @@
 class Landmark < ActiveRecord::Base
 
   has_many :landmarks
-  has_one :title
+  has_many :title
 
 end
