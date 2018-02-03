@@ -15,8 +15,8 @@ class CreateTables < ActiveRecord::Migration[5.1]
     end
 
     create_table :figures_titles, id: false do |t|
-      t.belongs_to :assembly, index: true
-      t.belongs_to :part, index: true
+      t.belongs_to :titles, index: true
+      t.belongs_to :figures, index: true
     end
   end
 end
